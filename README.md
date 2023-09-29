@@ -34,7 +34,15 @@
   - density
   - Latitude (link) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5302112/
 
-Feature Engineering
+**Feature Engineering**
+
+> **Cause of Death Categorization:**  
+> * Raw data file categories were too broad/numerous for either qualitative discovery or UI/UX  
+> * Review categories and grouped according to 'theme'
+> * Created hierarchy with 8 parent and 33 children
+> * <img src="images/Categories_cause.png" height=auto width=50% alt="Categories_cause.png" />
+> * Engineering performed in Excel and data feed refreshed
+
 
    > **Country Density - IQR and outliers:** [Excel]
    > 
