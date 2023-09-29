@@ -3,8 +3,14 @@
 ## Project/Goals
 (fill in your description and goals here)
 
+## Data Sources:
+1. [Cause of Death - Our World In Data](https://www.kaggle.com/datasets/ivanchvez/causes-of-death-our-world-in-data?resource=download).
+2. [World Population review](https://worldpopulationreview.com/countries)
+
 ## Process
-### (your step 1)
+* Data Aquisition
+* Feature Engineering
+  * Create the Categories (summary)
 ### (your step 2)
 
 ## Results
@@ -15,3 +21,11 @@
 
 ## Future Goals
 (what would you do if you had more time?)
+
+## NOtes
+- looked at world map first. Selected various measures to see if any signgificatn geographic differences. 
+- maternal in sudan, mental health in north. 
+- normalized the data against country population. 
+- Ivnestigations and hypothesis: 
+  - density
+  - Latitude
