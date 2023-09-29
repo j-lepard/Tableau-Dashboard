@@ -26,6 +26,33 @@
 - looked at world map first. Selected various measures to see if any signgificatn geographic differences. 
 - maternal in sudan, mental health in north. 
 - normalized the data against country population. 
+- ** Clustering **
+- 
 - Ivnestigations and hypothesis: 
+### Mental Health
+  - Hypothesis: related to Density or Latitude?
   - density
-  - Latitude
+  - Latitude (link) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5302112/
+
+Feature Engineering
+
+   > **Country Density - IQR and outliers:** [Excel]
+   > 
+   > Determine the percentiles and IQR using  
+   >   * QUARTILE.INC(data_range,percentile_desired)  
+   > * Categorize country in appropriate group:
+   >   * IF(AND(R2>=Lower_outlier,R2<Quartile1),"Quartile 1",  
+      IF(AND(R2>Quartile1,R2<Quartile3),"IQR",  
+      IF(AND(R2>Quartile3,R2<Upper_outlier),"Quartile 3",  
+      IF(OR(R2>Upper_outlier,R2<Lower_outlier),"Outlier",))))'
+   > * Refresh Tableau data connection to utilize new column [Density_group]
+
+### Maternal Health
+  - Subsarha africa
+  - 
+
+### Illness
+- Eastern Europe
+- Cardiovascular
+- Create group of Can/America vs Baltics
+- compare trends over time with forecast (unadjuested per pop)
