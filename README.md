@@ -1,15 +1,20 @@
-# Final-Project-Tableau
+# Worldwide Mortality - Data Visualization in Tableau
 
 ## Project/Goals
-(fill in your description and goals here)
+Purpose of this project is to identify themes in mortality (cause and scale) across geographic regions using mortality data. Identified variances would be further reviewed to scope future health-improvement initiatives.
+
+## Process
+1. Data Acquisition
+2. Feature Engineering
+   3. Categories Causes of Death
+   4. Categories countries based on Pop. Density
+5. Qualitative Analysis
+6. Hypothesis Test
+7. Dashboard
 
 ## Data Sources:
 1. [Cause of Death - Our World In Data](https://www.kaggle.com/datasets/ivanchvez/causes-of-death-our-world-in-data?resource=download).
 2. [World Population review](https://worldpopulationreview.com/countries)
-
-## Process
-* Data Acquisition
-### Feature Engineering
 
 **Cause of Death Categorization:**  
 > * Raw data file categories were too broad/numerous for either qualitative discovery or UI/UX  
@@ -19,7 +24,6 @@
 > * Engineering performed in Excel and data feed refreshed
 > * Created Calculated Field in Tableau:
 > * ![Cetargory_hierarchy.png](images%2FCetargory_hierarchy.png)
-
 
 **Country Density - IQR and outliers:** [Excel]
   
@@ -32,23 +36,23 @@
       IF(OR(R2>Upper_outlier,R2<Lower_outlier),"Outlier",))))'
  > * Refresh Tableau data connection to utilize new column [Density_group]
 
-### (your step 2)
-
 ## Results
 
-> Published Dashboard: [LHL-World Mortality](https://public.tableau.com/shared/HRX9FJGGF?:display_count=n&:origin=viz_share_link)
+> Published Dashboard:  
+> [LHL-World Mortality](https://public.tableau.com/shared/HRX9FJGGF?:display_count=n&:origin=viz_share_link)
 
-### Dashboard Home: 
+### Dashboard Home:  
 ![main_map.png](images%2Fmain_map.png)
 
-### Relative Contributions
+### Relative Contributions  
 ![Cause_details.png](images%2FCause_details.png)
 
-### Analysis: 
+### Analysis:  
 ![Analysis.png](images%2FAnalysis.png)
 
 
-## NOtes
+## Discussion:  
+
 - looked at world map first. Selected various measures to see if any signgificatn geographic differences. 
 - maternal in sudan, mental health in north. 
 - normalized the data against country population. 
