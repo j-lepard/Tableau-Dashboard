@@ -9,8 +9,29 @@
 
 ## Process
 * Data Aquisition
-* Feature Engineering
-  * Create the Categories (summary)
+### Feature Engineering
+
+**Cause of Death Categorization:**  
+> * Raw data file categories were too broad/numerous for either qualitative discovery or UI/UX  
+> * Review categories and grouped according to 'theme'
+> * Created hierarchy with 8 parent and 33 children
+> * <img src="images/Categories_cause.png" height=auto width=50% alt="Categories_cause.png" />
+> * Engineering performed in Excel and data feed refreshed
+> * Created Calculated Field in Tableau:
+> * ![Cetargory_hierarchy.png](images%2FCetargory_hierarchy.png)
+
+
+**Country Density - IQR and outliers:** [Excel]
+  
+ > Determine the percentiles and IQR using  
+ >   * QUARTILE.INC(data_range,percentile_desired)  
+ > * Categorize country in appropriate group:
+ >   * IF(AND(R2>=Lower_outlier,R2<Quartile1),"Quartile 1",  
+      IF(AND(R2>Quartile1,R2<Quartile3),"IQR",  
+      IF(AND(R2>Quartile3,R2<Upper_outlier),"Quartile 3",  
+      IF(OR(R2>Upper_outlier,R2<Lower_outlier),"Outlier",))))'
+ > * Refresh Tableau data connection to utilize new column [Density_group]
+
 ### (your step 2)
 
 ## Results
@@ -39,24 +60,7 @@
 
 **Feature Engineering**
 
-> **Cause of Death Categorization:**  
-> * Raw data file categories were too broad/numerous for either qualitative discovery or UI/UX  
-> * Review categories and grouped according to 'theme'
-> * Created hierarchy with 8 parent and 33 children
-> * <img src="images/Categories_cause.png" height=auto width=50% alt="Categories_cause.png" />
-> * Engineering performed in Excel and data feed refreshed
 
-
-   > **Country Density - IQR and outliers:** [Excel]
-   > 
-   > Determine the percentiles and IQR using  
-   >   * QUARTILE.INC(data_range,percentile_desired)  
-   > * Categorize country in appropriate group:
-   >   * IF(AND(R2>=Lower_outlier,R2<Quartile1),"Quartile 1",  
-      IF(AND(R2>Quartile1,R2<Quartile3),"IQR",  
-      IF(AND(R2>Quartile3,R2<Upper_outlier),"Quartile 3",  
-      IF(OR(R2>Upper_outlier,R2<Lower_outlier),"Outlier",))))'
-   > * Refresh Tableau data connection to utilize new column [Density_group]
 
 ### Maternal Health
   - Subsarha africa
