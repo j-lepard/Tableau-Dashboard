@@ -8,7 +8,7 @@
 2. [World Population review](https://worldpopulationreview.com/countries)
 
 ## Process
-* Data Aquisition
+* Data Acquisition
 ### Feature Engineering
 
 **Cause of Death Categorization:**  
@@ -36,15 +36,17 @@
 
 ## Results
 
-> Published Dashbard: [LHL-World Mortality](https://public.tableau.com/shared/HRX9FJGGF?:display_count=n&:origin=viz_share_link)
+> Published Dashboard: [LHL-World Mortality](https://public.tableau.com/shared/HRX9FJGGF?:display_count=n&:origin=viz_share_link)
 
-(Fill in which Option you chose, either 1 or 2. List the dataset you selected for the project if you selected Option 2. Also, discuss the visualizations you created, and why. For Option 2, also identify what your data question was, and how you went through the prompts.)
+### Dashboard Home: 
+![main_map.png](images%2Fmain_map.png)
 
-## Challenges 
-(discuss challenges you faced in the project)
+### Relative Contributions
+![Cause_details.png](images%2FCause_details.png)
 
-## Future Goals
-(what would you do if you had more time?)
+### Analysis: 
+![Analysis.png](images%2FAnalysis.png)
+
 
 ## NOtes
 - looked at world map first. Selected various measures to see if any signgificatn geographic differences. 
@@ -71,3 +73,10 @@
 - Cardiovascular
 - Create group of Can/America vs Baltics
 - compare trends over time with forecast (unadjuested per pop)
+
+
+## Challenges 
+(discuss challenges you faced in the project)
+
+## Future Goals
+(what would you do if you had more time?)
