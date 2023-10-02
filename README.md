@@ -84,7 +84,8 @@ Purpose of this project is to identify themes in mortality (cause and scale) acr
 ### Mental Health
   - Hypothesis: is death rate related to Density, Latitude or total Population?
   - In simple linear regression, there was insufficient evidence to suggest that any of the parameters was a good predictor of mental health outcomes.  
-  <img src="images/DR_latitutde.png" height=auto width=50% alt="DR_latitutde.png"/>  
+  <img src="images/DR_latitutde.png" height=auto width=50% alt="DR_latitutde.png"/>
+
   - This was not surprising given the complexity of mental health issues and the breadth/depth of data in the review. 
   - The subject has been pursued by others in greater depth and ultimately reached a similar conclusion.   
   - LINK: [Major Depression Prevalence Increases with Latitude in Canada](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5302112)
