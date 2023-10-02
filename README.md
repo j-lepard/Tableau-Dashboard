@@ -24,7 +24,8 @@ Purpose of this project is to identify themes in mortality (cause and scale) acr
 > * Review categories and grouped according to 'theme'
 > * Created hierarchy with 8 parent and 33 children  
 > <img src="images/Categories_cause.png" height=auto width=50% alt="Categories_cause.png" />  
-> * Engineering performed in Excel and data feed refreshed
+>   
+> Engineering performed in Excel and data feed refreshed
 > * Created Calculated Field in Tableau:  
 > <img src="images/Cetargory_hierarchy.png" height=auto width=50% alt="Cetargory_hierarchy.png"/>
 
