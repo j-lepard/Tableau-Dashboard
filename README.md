@@ -74,34 +74,35 @@ Purpose of this project is to identify themes in mortality (cause and scale) acr
 
 ## Discussion:  
 
-- looked at world map first. Selected various measures to see if any significant geographic differences. 
-- maternal in sudan, mental health in north. 
-- normalized the data against country population. 
-- ** Clustering **
-- 
-- Investigations and hypothesis: 
+- The landing page (full map) was reviewed first. 
+- Various measures to see if any significant geographic differences. 
+- Initial observations included:  
+  1. maternal health in Southern Sahara
+  2. mental health in north, particularly Greenland
+  3. Illness (cardiovascular and neoplasm (cancer) in Eastern Europe)
+
 ### Mental Health
-  - Hypothesis: related to Density or Latitude?
-  - density
-  - Latitude (link) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5302112/
-
-**Feature Engineering**
-
-
+  - Hypothesis: is death rate related to Density, Latitude or total Population?
+  - In simple linear regression, there was insufficient evidence to suggest that any of the parameters was a good predictor of mental health outcomes. <img src="images/DR_latitutde.png" height=auto width=50% alt="DR_latitutde.png"/>  
+  - This was not surprising given the complexity of mental health issues and the breadth/depth of data in the review. 
+  - The subject has been pursued by others in greater depth and ultimately reached a similar conclusion.   
+  - LINK: [Major Depression Prevalence Increases with Latitude in Canada](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5302112)
 
 ### Maternal Health
-  - Subsarha africa
+  - Countries in Sub-Sahara Africa appeared notably and consistently above all other countries.   
+<img src="images/Maternal_health.png" height=auto width=50% alt="Maternal_health.png.png"/>
   - 
 
 ### Illness
-- Eastern Europe
+- Eastern Europe had surprisingly hight prevalence of "illness"
+- Further look showed cardiovascular and neoplasm (cancer). This in itself was not surprising, but it being 3x higher than USA, UK, or Canada was unexpected.  
+<img src="images/cardio.png" height=auto width=50% alt="cardio.png"/> 
 - Cardiovascular
-- Create group of Can/America vs Baltics
-- compare trends over time with forecast (unadjuested per pop)
-
 
 ## Challenges 
-(discuss challenges you faced in the project)
+- primary challenges in the project were UX/UI when using a new visualization platform (Tableau)
 
 ## Future Goals
-(what would you do if you had more time?)
+- Future work in this project would include longitudinal studies for population-adjusted death rates for both: 
+  - Maternal Health
+  - Cardiac and Cancer
